@@ -20,9 +20,9 @@
             width: 400px;
             height: 400px;
             position: relative;
-            border-radius: 300px;
+            border-radius: 50%;
             overflow: hidden;
-            box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+            box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.75);
         }
 
         #八卦>div:first-child {
@@ -93,15 +93,47 @@
                 transform: rotate(360deg);
             }
         }
-        #八卦-wrapper{
+
+        #八卦-wrapper {
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
         }
-        #八卦-描述{
+
+        #八卦-描述 {
             margin-top: 1em;
+        }
+
+        @media (max-width:500px) {
+
+            #八卦 {
+                width: 200px;
+                height: 200px;
+            }
+
+            #八卦>div:nth-child(3) {
+                width: 100px;
+                height: 100px;
+            }
+
+            #八卦>div:nth-child(4) {
+                width: 100px;
+                height: 100px;
+            }
+
+            #八卦>div:nth-child(5) {
+                width: 25px;
+                height: 25px;
+                top: 37.5px;
+            }
+
+            #八卦>div:nth-child(6) {
+                width: 25px;
+                height: 25px;
+                bottom: 37.5px;
+            }
         }
     </style>
 </head>
