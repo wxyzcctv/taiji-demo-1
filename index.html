@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的太极</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #eee;
+        }
+
+        #八卦 {
+            width: 400px;
+            height: 400px;
+            position: relative;
+            border-radius: 300px;
+            overflow: hidden;
+        }
+
+        #八卦>div:first-child {
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            background-color: black;
+        }
+
+        #八卦>div:nth-child(2) {
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            background-color: white;
+        }
+
+        #八卦>div:nth-child(3) {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 50%;
+            background-color: black;
+        }
+
+        #八卦>div:nth-child(4) {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            border-radius: 50%;
+            background-color: white;
+        }
+
+        #八卦>div:nth-child(5) {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            left: 50%;
+            top: 75px;
+            transform: translateX(-50%);
+            border-radius: 50%;
+            background-color: white;
+        }
+
+        #八卦>div:nth-child(6) {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            left: 50%;
+            bottom: 75px;
+            transform: translateX(-50%);
+            border-radius: 50%;
+            background-color: black;
+        }
+
+        #八卦 {
+            animation: rotate 1.5s linear infinite;
+        }
+
+        @keyframes rotate {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="八卦">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div>道可道，非常道</div>
+</body>
+
+</html>
